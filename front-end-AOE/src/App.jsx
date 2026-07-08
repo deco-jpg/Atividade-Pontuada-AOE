@@ -7,6 +7,7 @@ import Contato from './pages/Contato'
 import QuemSomos from './pages/QuemSomos'
 import HSE from './pages/Incidentes'
 import Producao from './pages/Producao'
+import ManutencaoAtivos from './pages/ManutencaoAtivos'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/incidentes" element={<incidentes />} />
         <Route path="/producao" element={<Producao />} />
         <Route path="/contato" element={<Contato />} />
+         <Route path="/ManutencaoAtivos" element={<ManutencaoAtivos />} />
       </Routes>
       <Footer />
     </BrowserRouter>
