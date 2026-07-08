@@ -8,6 +8,7 @@ import QuemSomos from './pages/QuemSomos'
 import HSE from './pages/Incidentes'
 import Producao from './pages/Producao'
 import ManutencaoAtivos from './pages/ManutencaoAtivos'
+import Tripulacao from './pages/Tripulacao'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quem-somos" element={<QuemSomos />} />
-        <Route path="/incidentes" element={<incidentes />} />
+        <Route path="/incidentes" element={<HSE />} />
+        <Route path="/tripulacao" element={<Tripulacao />} />
         <Route path="/producao" element={<Producao />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/ManutencaoAtivos" element={<ManutencaoAtivos />} />
