@@ -1,6 +1,19 @@
+import { useState } from 'react'
 import './style.css'
 
 export default function Contato() {
+  const [mensagemEnviada, setMensagemEnviada] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setMensagemEnviada(true)
+    e.target.reset()
+
+    setTimeout(() => {
+      setMensagemEnviada(false)
+    }, 3000)
+  }
+
   return (
     <div className="contato-container">
       <h1>Contato e Suporte de Emergência Institucional</h1>
@@ -99,7 +112,12 @@ export default function Contato() {
 
       <section className="secao-formulario">
         <h2>Envie sua Mensagem</h2>
-        <form className="form-contato">
+        {mensagemEnviada && (
+          <div className="mensagem-sucesso">
+            ✓ Mensagem enviada com sucesso!
+          </div>
+        )}
+        <form className="form-contato" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="nome">Nome Completo</label>
             <input type="text" id="nome" name="nome" required />
