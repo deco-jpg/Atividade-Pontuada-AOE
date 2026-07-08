@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css";
+import "./styles.css";
 
 export default function Manutencoes() {
   // Estado centralizado espelhando a entidade Java Spring Boot
