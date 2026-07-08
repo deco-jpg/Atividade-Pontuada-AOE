@@ -21,6 +21,9 @@ export default function Header() {
               <Link to="/hse" className="nav-link">HSE</Link>
             </li>
             <li className="nav-item">
+              <Link to="/producao" className="nav-link">Produção</Link>
+            </li>
+            <li className="nav-item">
               <Link to="/contato" className="nav-link">Contato</Link>
             </li>
           </ul>
