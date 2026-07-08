@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Contato from './pages/Contato'
 import QuemSomos from './pages/QuemSomos'
-import HSE from './pages/Incidentes'
+import incidentes from './pages/Incidentes'
 import Producao from './pages/Producao'
 import ManutencaoAtivos from './pages/ManutencaoAtivos'
 
