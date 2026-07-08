@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Contato from './pages/Contato'
 import QuemSomos from './pages/QuemSomos'
 import HSE from './pages/HSE'
+import Producao from './pages/Producao'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/quem-somos" element={<QuemSomos />} />
         <Route path="/hse" element={<HSE />} />
+        <Route path="/producao" element={<Producao />} />
         <Route path="/contato" element={<Contato />} />
       </Routes>
       <Footer />
