@@ -5,9 +5,10 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Contato from './pages/Contato'
 import QuemSomos from './pages/QuemSomos'
-import incidentes from './pages/Incidentes'
 import Producao from './pages/Producao'
 import ManutencaoAtivos from './pages/ManutencaoAtivos'
+import Tripulacao from './pages/Tripulacao'
+import Incidentes from './pages/Incidentes'
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quem-somos" element={<QuemSomos />} />
-        <Route path="/incidentes" element={<incidentes />} />
+        <Route path="/incidentes" element={<Incidentes />} />
+        <Route path="/tripulacao" element={<Tripulacao />} />
         <Route path="/producao" element={<Producao />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/ManutencaoAtivos" element={<ManutencaoAtivos />} />
