@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import './style.css'
-import { api } from '../../services/api'
+import { useState } from 'react';
+import './style.css';
+import api from '../../services/api';
 
 export default function Incidentes() {
   const [formData, setFormData] = useState({
@@ -133,25 +133,25 @@ export default function Incidentes() {
                 </select>
               </div>
 
-              <div className="form-group">
-                <label htmlFor="plataforma">
-                  Plataforma Afetada <span className="obrigatorio">*</span>
-                </label>
-                <select
-                  id="plataforma"
-                  name="plataforma"
-                  value={formData.plataforma}
-                  onChange={handleChange}
-                  required
-                >
-                  <option value="">Selecione a plataforma...</option>
-                  {plataformas.map(plataforma => (
-                    <option key={plataforma} value={plataforma}>
-                      {plataforma}
-                    </option>
-                  ))}
-                </select>
-              </div>
+<div className="form-group">
+  <label htmlFor="plataforma">
+    Plataforma Afetada <span className="obrigatorio">*</span>
+  </label>
+  <select
+    id="plataforma"
+    name="plataforma"
+    value={formData.plataforma}
+    onChange={handleChange}
+    required
+  >
+    <option value="">Selecione a plataforma...</option>
+    {plataformas.map(plataforma => (
+      <option key={plataforma} value={plataforma}>
+        {plataforma}
+      </option>
+    ))}
+  </select>
+</div>
             </div>
 
             <div className="form-row">
