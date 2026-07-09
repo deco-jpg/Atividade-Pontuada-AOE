@@ -300,3 +300,40 @@ textarea {
     }
 
 }
+
+/* ==========================
+   CORREÇÃO DOS CAMPOS
+========================== */
+
+.incidentes-container {
+    position: relative;
+}
+
+.incidentes-form {
+    position: relative;
+}
+
+.incidentes-form input,
+.incidentes-form select,
+.incidentes-form textarea {
+    position: relative;
+    width: 100%;
+    pointer-events: auto;
+    user-select: text;
+    opacity: 1;
+    cursor: text;
+}
+
+
+.incidentes-form select {
+    cursor: pointer;
+}
+
+
+.incidentes-form input:focus,
+.incidentes-form select:focus,
+.incidentes-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
