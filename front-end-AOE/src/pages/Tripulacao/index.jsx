@@ -1,6 +1,7 @@
 import './style.css'
 
 import api from '../../services/api'
+import { useState } from 'react'
 
 export default function Tripulacao() {
     const [tripulacao, setTripulacao] = useState([])
