@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/incidentes")
 @CrossOrigin(origins = "*")
@@ -15,6 +17,13 @@ public class IncidentesController {
 
     @Autowired
     private IncidentesService service;
+
+    // MÉTODO ADICIONADO: Retorna a lista completa convertida em DTO
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    public List<IncidentesResponseDTO> listar() {
+        return service.listarTodos();
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
