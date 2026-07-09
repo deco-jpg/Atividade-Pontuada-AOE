@@ -102,7 +102,7 @@ export default function Incidentes() {
     try {
 
 
-      const response = await api.post('/incidentes', {
+      const response = await api.post('/api/incidentes', {
 
         gravidade: formData.gravidade,
 
